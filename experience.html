@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Antonella Sossi — Brand & Creative Strategist based in Madrid. Campaigns, brand identities and experiences for fashion, beauty and lifestyle.">
+<meta property="og:title" content="Experience — Antonella Sossi">
+<meta property="og:description" content="Antonella Sossi — Brand & Creative Strategist based in Madrid. Campaigns, brand identities and experiences for fashion, beauty and lifestyle.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<title>Experience — Antonella Sossi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FFFEFC; --paper:#FFFFFF; --ink:#1B1815; --muted:#6F655C; --mocha:#8A7262; --line:#E9E4DD;
+  --tint:#EFE7DE; --tint2:#E5D8CB;
+  --sans:'Helvetica Neue',Helvetica,'Inter',Arial,sans-serif; --serif:'Instrument Serif',Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.06;z-index:0;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .4 0 0 0 0 .35 0 0 0 0 .3 0 0 0 .08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+main,nav,footer{position:relative;z-index:1}
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+em.s{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mocha)}
+.pill{display:inline-flex;align-items:center;border:1px solid var(--ink);border-radius:999px;padding:5px 12px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:var(--paper);white-space:nowrap}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:20;padding:16px 0;background:linear-gradient(var(--cream) 70%,transparent)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'Pinyon Script',cursive;font-size:28px;line-height:1}
+.navpills{display:flex;gap:6px}
+.navpills a{text-decoration:none;color:var(--ink)}
+.navpills a.on{background:var(--ink);color:var(--paper)}
+.lang{display:flex;border:1px solid var(--ink);border-radius:999px;overflow:hidden}
+.lang button{border:0;background:transparent;font:600 11px var(--sans);letter-spacing:.08em;padding:6px 10px;cursor:pointer;color:var(--ink)}
+.lang button.on{background:var(--mocha);color:var(--paper)}
+
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:14px;padding:12px 20px;border-radius:999px;border:1px solid var(--ink);color:var(--ink);background:transparent}
+.btn.dark{background:var(--ink);color:var(--paper)}
+.btn:hover{background:var(--mocha);border-color:var(--mocha);color:var(--paper)}
+.btn svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* HEADER */
+.back{display:inline-flex;gap:8px;margin-top:36px;font-size:14px;font-weight:600;color:var(--ink);text-decoration:none}
+.ptop{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:end;padding:4vh 0 5vh}
+.ptop h1{font-weight:700;font-size:clamp(46px,6.6vw,100px);line-height:.98;letter-spacing:-.045em}
+.ptop p{color:var(--muted);font-size:18px;line-height:1.6;max-width:40ch;margin-bottom:22px}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.fact{background:var(--paper);border-radius:14px;padding:16px 18px;border:1px solid var(--line)}
+.fact small{display:block;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--mocha);margin-bottom:4px}
+.fact span{font-size:16px;font-weight:600;letter-spacing:-.01em}
+
+.sec{padding:12vh 0 0}
+.num-h{display:flex;align-items:baseline;gap:10px;color:var(--muted);font-size:15px;margin-bottom:16px}
+.num-h b{color:var(--ink);font-weight:600}
+
+/* ROLES */
+.role{display:grid;grid-template-columns:.85fr 1.6fr;gap:48px;background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:40px}
+.role + .role{margin-top:14px}
+.r-side{display:flex;flex-direction:column;gap:14px;align-self:start;position:sticky;top:90px}
+.r-side h2{font-weight:700;font-size:clamp(38px,4.4vw,64px);line-height:.95;letter-spacing:-.045em}
+.r-side .desc{font-family:var(--serif);font-style:italic;font-size:21px;line-height:1.25;color:var(--ink);max-width:28ch}
+.meta{display:flex;gap:6px;flex-wrap:wrap}
+.date{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.06em;padding:5px 11px;border-radius:999px;background:#F2EDE6}
+.date.ghost{background:transparent;border:1px solid var(--line);color:var(--muted)}
+.path{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:22px}
+.path .step{font-size:13px;font-weight:600;padding:7px 13px;border-radius:999px;border:1px solid var(--line);color:var(--muted);background:var(--cream)}
+.path .step.now{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.path .arr{color:var(--mocha);font-size:14px}
+.r-main h3{font-size:clamp(22px,2vw,28px);font-weight:700;letter-spacing:-.03em;line-height:1.1;margin-bottom:22px}
+.r-main h3 em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0}
+.bul{list-style:none;display:flex;flex-direction:column}
+.bul li{position:relative;padding:14px 0 14px 30px;border-top:1px solid var(--line);color:var(--muted);font-size:15px;line-height:1.55}
+.bul li:last-child{border-bottom:1px solid var(--line)}
+.bul li::before{content:"";position:absolute;left:4px;top:25px;width:12px;height:1.5px;background:var(--mocha)}
+.bul b{font-weight:700;color:var(--ink)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:22px}
+.tag{font-size:12px;font-weight:600;padding:5px 11px;border-radius:999px;background:var(--tint);color:var(--ink)}
+.related{margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.related .eyebrow{margin-right:6px}
+.rl{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--ink);text-decoration:none;padding:6px 12px;border:1px solid var(--ink);border-radius:999px}
+.rl:hover{background:var(--ink);color:var(--paper)}
+
+/* EDUCATION */
+.edu{border-top:1px solid var(--ink)}
+.ed{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr) 120px;gap:24px;align-items:baseline;padding:24px 0;border-bottom:1px solid var(--line)}
+.ed b{font-size:clamp(20px,1.8vw,26px);font-weight:700;letter-spacing:-.03em;line-height:1.15}
+.ed span{color:var(--muted);font-size:16px}
+.ed span i{font-family:var(--serif);font-size:19px;color:var(--ink)}
+.ed .yr{font-size:15px;font-weight:600;letter-spacing:-.01em;white-space:nowrap;text-align:right}
+
+/* LANGUAGES */
+.langs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.lg{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px}
+.lg h4{font-size:20px;font-weight:700;letter-spacing:-.02em}
+.lg p{font-family:var(--serif);font-style:italic;font-size:19px;color:var(--muted);margin:2px 0 18px}
+.meter{display:grid;grid-template-columns:repeat(5,1fr);gap:4px}
+.meter i{height:5px;border-radius:999px;background:var(--line)}
+.meter i.f{background:var(--mocha)}
+
+/* SKILLS */
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.sk{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:34px}
+.sk > h3{font-size:clamp(26px,2.4vw,34px);font-weight:700;letter-spacing:-.03em;line-height:1.05;margin-bottom:6px}
+.sk > h3 em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0}
+.grp{padding:18px 0;border-bottom:1px solid var(--line)}
+.grp:last-child{border-bottom:0;padding-bottom:0}
+.grp .eyebrow{font-size:11px;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--cream)}
+
+.tools{display:grid;grid-template-columns:repeat(auto-fill,minmax(84px,1fr));gap:14px 10px}
+.tool{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
+.tool .lg-box{display:grid;place-items:center;width:60px;height:60px;border-radius:16px;background:var(--cream);border:1px solid var(--line);padding:11px;transition:transform .25s ease,border-color .25s ease}
+.tool:hover .lg-box{transform:translateY(-2px);border-color:var(--mocha)}
+.tool img{width:100%;height:100%;object-fit:contain;display:block}
+.tool.wm .lg-box{padding:5px}
+.tool span{font-size:12px;font-weight:600;line-height:1.2;color:var(--ink)}
+
+/* CLOSING */
+.band{background:var(--tint);border-radius:24px;padding:56px 40px;text-align:center}
+.band h3{font-family:var(--serif);font-weight:400;font-size:clamp(44px,6.5vw,96px);line-height:1}
+.band p{color:var(--muted);max-width:52ch;margin:18px auto 28px}
+.band .btns{justify-content:center}
+
+footer{border-top:1px solid var(--ink);padding:26px 0 0;overflow:hidden;margin-top:14vh}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.foot a{color:var(--ink)}
+.giant{font-weight:700;text-transform:uppercase;font-size:10vw;display:inline-block;line-height:.9;letter-spacing:-.05em;white-space:nowrap;margin:28px 0 24px;color:var(--ink)}
+.proto{position:fixed;bottom:14px;right:14px;z-index:30;background:var(--mocha);color:var(--paper);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:7px 12px;border-radius:999px}
+
+@media (max-width:860px){
+  .wrap{padding:0 16px}
+  .navpills{display:none}
+  .ptop{grid-template-columns:1fr;gap:20px}
+  .facts{grid-template-columns:1fr 1fr}
+  .role{grid-template-columns:1fr;gap:26px;padding:24px}
+  .r-side{position:static}
+  .ed{grid-template-columns:1fr;gap:4px}
+  .ed .yr{text-align:left}
+  .langs{grid-template-columns:1fr 1fr}
+  .skills{grid-template-columns:1fr}
+  .sk{padding:24px}
+  .band{padding:40px 22px}
+}
+</style>
+<style>section[id],header[id]{scroll-margin-top:72px}</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="index.html" style="color:inherit;text-decoration:none">Antonella Sossi</a>
+  <div class="navpills">
+    <a class="pill" href="index.html" data-en="Home" data-es="Inicio">Home</a>
+    <a class="pill" href="index.html#work" data-en="Work" data-es="Proyectos">Work</a>
+    <a class="pill" href="about.html" data-en="About" data-es="Sobre mí">About</a>
+  </div>
+  <div class="lang"><button class="on" data-l="en">EN</button><button data-l="es">ES</button></div>
+</div></nav>
+
+<main id="top"><div class="wrap">
+  <a class="back" href="index.html" data-en="← Back to home" data-es="← Volver">← Back to home</a>
+
+  <header class="ptop">
+    <h1 data-en="Experience" data-es="Experiencia">Experience</h1>
+    <div>
+      <p data-en="From building my own fashion brand to leading the creative voice of a brand for young people, my work sits where strategy meets real people." data-es="Desde construir mi propia marca de moda hasta liderar la voz creativa de una marca para jóvenes, mi trabajo está donde la estrategia se encuentra con la gente real.">From building my own fashion brand to leading the creative voice of a brand for young people, my work sits where strategy meets real people.</p>
+      <div class="btns"><a class="btn dark cv" href="Antonella_Sossi_CV_EN.pdf" download="Antonella_Sossi_CV_EN.pdf"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-en="Download CV (PDF)" data-es="Descargar CV (PDF)">Download CV (PDF)</span></a></div>
+    </div>
+  </header>
+
+  <div class="facts">
+    <div class="fact"><small data-en="Current role" data-es="Cargo actual">Current role</small><span>Brand &amp; Creative Strategist</span></div>
+    <div class="fact"><small data-en="Based in" data-es="Con sede en">Based in</small><span data-en="Madrid, Spain" data-es="Madrid, España">Madrid, Spain</span></div>
+    <div class="fact"><small data-en="Focus" data-es="Foco">Focus</small><span data-en="Fashion · Beauty · Lifestyle" data-es="Moda · Beauty · Lifestyle">Fashion · Beauty · Lifestyle</span></div>
+    <div class="fact"><small data-en="Languages" data-es="Idiomas">Languages</small><span>ES · EN · FR · IT</span></div>
+  </div>
+
+  <!-- 01 WORK -->
+  <section class="sec" id="work-xp">
+    <div class="num-h"><b>01</b> / <span data-en="Work experience" data-es="Experiencia profesional">Work experience</span></div>
+
+    <article class="role">
+      <div class="r-side">
+        <div class="meta"><span class="date" data-en="Apr 2024 — Present" data-es="Abr 2024 — Actualidad">Apr 2024 — Present</span><span class="date ghost" data-en="Madrid &amp; New York" data-es="Madrid y Nueva York">Madrid &amp; New York</span></div>
+        <h2>TrepCamp</h2>
+        <p class="desc" data-en="Immersive programs for young people in fashion, media, sports business and entrepreneurship." data-es="Programas inmersivos para jóvenes en moda, medios, negocio del deporte y emprendimiento.">Immersive programs for young people in fashion, media, sports business and entrepreneurship.</p>
+      </div>
+      <div class="r-main">
+        <div class="path">
+          <span class="step">Operations Analyst</span><span class="arr">→</span>
+          <span class="step">Social Media Manager</span><span class="arr">→</span>
+          <span class="step now">Brand &amp; Creative Strategist</span>
+        </div>
+        <ul class="bul">
+          <li data-en="Lead the brand's creative and communication direction: campaign concepts, scripts, tone of voice and visual identity." data-es="Lidero la dirección creativa y de comunicación de la marca: conceptos de campaña, guiones, tono de voz e identidad visual.">Lead the brand's creative and communication direction: campaign concepts, scripts, tone of voice and visual identity.</li>
+          <li data-en="Repositioned the brand's voice and aesthetic to connect with a younger audience: organic community from <b>17K to 44K+</b>, <b>10x story reach</b>, and expansion from Mexico to the rest of Latin America." data-es="Reposicioné la voz y la estética de la marca para conectar con un público joven: comunidad orgánica de <b>17K a más de 44K</b>, <b>10x de alcance en historias</b> y expansión de México al resto de Latinoamérica.">Repositioned the brand's voice and aesthetic to connect with a younger audience: organic community from <b>17K to 44K+</b>, <b>10x story reach</b>, and expansion from Mexico to the rest of Latin America.</li>
+          <li data-en="Built Voices, an ambassador community of ~50 participants turned creators, driving <b>$3,750+ in direct program sales</b> through UGC; also manage creator and influencer partnerships." data-es="Creé Voices, una comunidad de ~50 embajadores (participantes convertidos en creadores) que ha generado <b>más de $3.750 en ventas directas</b> de programas con UGC; también gestiono colaboraciones con creadores e influencers.">Built Voices, an ambassador community of ~50 participants turned creators, driving <b>$3,750+ in direct program sales</b> through UGC; also manage creator and influencer partnerships.</li>
+          <li data-en="Coordinated the on-site logistics of the New York program (venues, accommodation, closing event, partners' dinner) and led the content plan for the Madrid program at ESIC Business School." data-es="Coordiné la logística presencial del programa de Nueva York (espacios, alojamiento, evento de cierre, cena de partners) y lideré el plan de contenido del programa de Madrid en ESIC Business School.">Coordinated the on-site logistics of the New York program (venues, accommodation, closing event, partners' dinner) and led the content plan for the Madrid program at ESIC Business School.</li>
+          <li data-en="Contributed creative input during the brand's rebrand." data-es="Aporté ideas creativas durante el rebranding de la marca.">Contributed creative input during the brand's rebrand.</li>
+          <li data-en="Produce photo and video content for campaigns and programs." data-es="Produzco contenido de foto y vídeo para campañas y programas.">Produce photo and video content for campaigns and programs.</li>
+        </ul>
+        <div class="tags"><span class="tag">Brand Strategy</span><span class="tag">Campaign Concepting</span><span class="tag">Events</span><span class="tag">UGC &amp; Influencers</span><span class="tag">Content Production</span></div>
+        <div class="related">
+          <span class="eyebrow" data-en="See related work" data-es="Ver proyectos relacionados">See related work</span>
+          <a class="rl" href="brand-strategy.html">Brand Strategy &amp; Audience →</a>
+          <a class="rl" href="events.html">Events &amp; Experiences →</a>
+          <a class="rl" href="ugc.html">UGC &amp; Influencers →</a>
+          <a class="rl" href="content-production.html">Content Production →</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="role">
+      <div class="r-side">
+        <div class="meta"><span class="date" data-en="Oct 2020 — Dec 2022" data-es="Oct 2020 — Dic 2022">Oct 2020 — Dec 2022</span><span class="date ghost">Bolivia</span></div>
+        <h2>Vibra Alto</h2>
+        <p class="desc" data-en="My own fashion brand, built from scratch and sold entirely through Instagram." data-es="Mi propia marca de moda, creada desde cero y vendida íntegramente a través de Instagram.">My own fashion brand, built from scratch and sold entirely through Instagram.</p>
+      </div>
+      <div class="r-main">
+        <div class="path"><span class="step now">Founder &amp; Creative Director</span></div>
+        <ul class="bul">
+          <li data-en="Founded and ran an online fashion brand on my own, from name and identity to positioning and visual language." data-es="Fundé y dirigí sola una marca de moda online: nombre, identidad, posicionamiento y lenguaje visual.">Founded and ran an online fashion brand on my own, from name and identity to positioning and visual language.</li>
+          <li data-en="Directed and shot every photoshoot, and produced the full product catalogue." data-es="Dirigí y fotografié todas las sesiones de fotos, y produje el catálogo completo.">Directed and shot every photoshoot, and produced the full product catalogue.</li>
+          <li data-en="Designed and ran the full sales strategy on Instagram, the brand's only sales channel: content, community and direct selling that turned <b>6K organic followers (built from 0)</b> into real, consistent sales." data-es="Diseñé y ejecuté toda la estrategia de venta en Instagram, el único canal de venta de la marca: contenido, comunidad y venta directa que convirtieron <b>6K seguidores orgánicos (desde 0)</b> en ventas reales y constantes.">Designed and ran the full sales strategy on Instagram, the brand's only sales channel: content, community and direct selling that turned <b>6K organic followers (built from 0)</b> into real, consistent sales.</li>
+        </ul>
+        <div class="tags"><span class="tag">Brand Building</span><span class="tag">Creative Direction</span><span class="tag">Photography</span></div>
+        <div class="related">
+          <span class="eyebrow" data-en="See related work" data-es="Ver proyectos relacionados">See related work</span>
+          <a class="rl" href="vibra-alto.html">Brand Building &amp; Creative Direction →</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- 02 EDUCATION -->
+  <section class="sec">
+    <div class="num-h"><b>02</b> / <span data-en="Education" data-es="Formación">Education</span></div>
+    <div class="edu">
+      <div class="ed"><b>IED Madrid</b><span data-en="Master in <i>Fashion Communication</i>" data-es="Máster en <i>Comunicación de Moda</i>">Master in <i>Fashion Communication</i></span><span class="yr">2024 — 2025</span></div>
+      <div class="ed"><b>Inside LVMH</b><span data-en="Certificate: <i>Creation &amp; Branding, Retail &amp; Client Experience</i>" data-es="Certificado: <i>Creation &amp; Branding, Retail &amp; Client Experience</i>">Certificate: <i>Creation &amp; Branding, Retail &amp; Client Experience</i></span><span class="yr">2026</span></div>
+      <div class="ed"><b>Universidad Privada Boliviana</b><span data-en="Bachelor in <i>Marketing &amp; Logistics</i>, Cum Laude" data-es="Grado en <i>Marketing y Logística</i>, Cum Laude">Bachelor in <i>Marketing &amp; Logistics</i>, Cum Laude</span><span class="yr">2018 — 2023</span></div>
+      <div class="ed"><b>University of Florida</b><span data-en="<i>English Language Institute</i>" data-es="<i>English Language Institute</i>"><i>English Language Institute</i></span><span class="yr">2017</span></div>
+    </div>
+  </section>
+
+  <!-- 03 LANGUAGES -->
+  <section class="sec">
+    <div class="num-h"><b>03</b> / <span data-en="Languages" data-es="Idiomas">Languages</span></div>
+    <div class="langs">
+      <div class="lg"><h4 data-en="Spanish" data-es="Español">Spanish</h4><p data-en="Native" data-es="Nativo">Native</p><div class="meter"><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i></div></div>
+      <div class="lg"><h4 data-en="English" data-es="Inglés">English</h4><p data-en="Fluent" data-es="Fluido">Fluent</p><div class="meter"><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i></i></div></div>
+      <div class="lg"><h4 data-en="French" data-es="Francés">French</h4><p data-en="Intermediate (B1)" data-es="Intermedio (B1)">Intermediate (B1)</p><div class="meter"><i class="f"></i><i class="f"></i><i class="f"></i><i></i><i></i></div></div>
+      <div class="lg"><h4 data-en="Italian" data-es="Italiano">Italian</h4><p data-en="Basic (A2)" data-es="Básico (A2)">Basic (A2)</p><div class="meter"><i class="f"></i><i class="f"></i><i></i><i></i><i></i></div></div>
+    </div>
+  </section>
+
+  <!-- 04 SKILLS & TOOLS -->
+  <section class="sec">
+    <div class="num-h"><b>04</b> / <span data-en="Skills &amp; tools" data-es="Habilidades y herramientas">Skills &amp; tools</span></div>
+    <div class="skills">
+      <div class="sk">
+        <h3 data-en="What I <em>do</em>" data-es="Lo que <em>hago</em>">What I <em>do</em></h3>
+        <div class="grp"><div class="eyebrow" data-en="Strategy" data-es="Estrategia">Strategy</div><div class="chips">
+          <span class="chip" data-en="Brand Positioning" data-es="Posicionamiento de marca">Brand Positioning</span>
+          <span class="chip" data-en="Audience &amp; Trend Research" data-es="Investigación de audiencias y tendencias">Audience &amp; Trend Research</span>
+          <span class="chip" data-en="Tone of Voice &amp; Brand Messaging" data-es="Tono de voz y mensajes de marca">Tone of Voice &amp; Brand Messaging</span>
+          <span class="chip" data-en="Campaign Concepting" data-es="Conceptualización de campañas">Campaign Concepting</span>
+          <span class="chip" data-en="Content Strategy" data-es="Estrategia de contenidos">Content Strategy</span>
+        </div></div>
+        <div class="grp"><div class="eyebrow" data-en="Creative" data-es="Creatividad">Creative</div><div class="chips">
+          <span class="chip" data-en="Moodboards &amp; Art Direction Support" data-es="Moodboards y apoyo en dirección de arte">Moodboards &amp; Art Direction Support</span>
+          <span class="chip" data-en="Storytelling &amp; Scriptwriting" data-es="Storytelling y guiones">Storytelling &amp; Scriptwriting</span>
+        </div></div>
+        <div class="grp"><div class="eyebrow" data-en="Production" data-es="Producción">Production</div><div class="chips">
+          <span class="chip" data-en="Photography" data-es="Fotografía">Photography</span>
+          <span class="chip" data-en="Video Shooting &amp; Editing for Social Media" data-es="Grabación y edición de vídeo para redes">Video Shooting &amp; Editing for Social Media</span>
+          <span class="chip" data-en="Photoshoot Production Support" data-es="Apoyo en producción de sesiones de fotos">Photoshoot Production Support</span>
+        </div></div>
+        <div class="grp"><div class="eyebrow" data-en="People &amp; Experiences" data-es="Personas y experiencias">People &amp; Experiences</div><div class="chips">
+          <span class="chip" data-en="Influencer &amp; Creator Partnerships (UGC)" data-es="Colaboraciones con creadores e influencers (UGC)">Influencer &amp; Creator Partnerships (UGC)</span>
+          <span class="chip" data-en="Community Building" data-es="Creación de comunidad">Community Building</span>
+          <span class="chip" data-en="Event Coordination &amp; Logistics" data-es="Coordinación de eventos y logística">Event Coordination &amp; Logistics</span>
+        </div></div>
+      </div>
+      <div class="sk">
+        <h3 data-en="What I <em>use</em>" data-es="Lo que <em>uso</em>">What I <em>use</em></h3>
+        <div class="grp"><div class="eyebrow" data-en="Design" data-es="Diseño">Design</div><div class="tools">
+          <div class="tool"><div class="lg-box"><img src="assets/logos/canva.png" alt="Canva"></div><span>Canva</span></div><div class="tool"><div class="lg-box"><img src="assets/logos/photoshop.png" alt="Photoshop"></div><span>Photoshop</span></div><div class="tool"><div class="lg-box"><img src="assets/logos/illustrator.png" alt="Illustrator"></div><span>Illustrator</span></div><div class="tool"><div class="lg-box"><img src="assets/logos/figma.png" alt="Figma"></div><span>Figma</span></div><div class="tool"><div class="lg-box"><img src="assets/logos/lightroom.svg" alt="Lightroom"></div><span>Lightroom</span></div>
+        </div></div>
+        <div class="grp"><div class="eyebrow" data-en="Video" data-es="Vídeo">Video</div><div class="tools">
+          <div class="tool"><div class="lg-box"><img src="assets/logos/capcut.png" alt="CapCut"></div><span>CapCut</span></div><div class="tool"><div class="lg-box"><img src="assets/logos/premiere.png" alt="Premiere"></div><span>Premiere</span></div>
+        </div></div>
+        <div class="grp"><div class="eyebrow" data-en="AI &amp; Automation" data-es="IA y automatización">AI &amp; Automation</div><div class="tools">
+          <div class="tool"><div class="lg-box"><img src="assets/logos/chatgpt.png" alt="ChatGPT"></div><span>ChatGPT</span></div><div class="tool"><div class="lg-box"><img src="assets/logos/claude.png" alt="Claude"></div><span>Claude</span></div><div class="tool"><div class="lg-box"><img src="assets/logos/midjourney.svg" alt="Midjourney"></div><span>Midjourney</span></div><div class="tool"><div class="lg-box"><img src="assets/logos/n8n.png" alt="n8n"></div><span>n8n</span></div><div class="tool"><div class="lg-box"><img src="assets/logos/apify.svg" alt="Apify"></div><span>Apify</span></div>
+        </div></div>
+        <div class="grp"><div class="eyebrow" data-en="Social Planning" data-es="Planificación de redes">Social Planning</div><div class="tools">
+          <div class="tool wm"><div class="lg-box"><img src="assets/logos/metricool.png" alt="Metricool"></div><span>Metricool</span></div><div class="tool wm"><div class="lg-box"><img src="assets/logos/later.png" alt="Later"></div><span>Later</span></div><div class="tool"><div class="lg-box"><img src="assets/logos/buffer.png" alt="Buffer"></div><span>Buffer</span></div>
+        </div></div>
+        <div class="grp"><div class="eyebrow" data-en="Workflow" data-es="Organización">Workflow</div><div class="tools">
+          <div class="tool"><div class="lg-box"><img src="assets/logos/notion.png" alt="Notion"></div><span>Notion</span></div><div class="tool"><div class="lg-box"><img src="assets/logos/framer.svg" alt="Framer"></div><span>Framer</span></div><div class="tool"><div class="lg-box"><img src="assets/logos/google-workspace.png" alt="Google Workspace"></div><span>Google Workspace</span></div><div class="tool"><div class="lg-box"><img src="assets/logos/office.png" alt="Microsoft Office"></div><span>Microsoft Office</span></div>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="sec">
+    <div class="band">
+      <h3 data-en="Let's build something <em class='s'>people remember.</em>" data-es="Creemos algo que <em class='s'>la gente recuerde.</em>">Let's build something <em class="s">people remember.</em></h3>
+      <p data-en="I'm looking for my next role in Madrid, at an agency or in-house, ideally with beauty, fashion and lifestyle brands." data-es="Busco mi próximo reto en Madrid, en agencia o in-house, idealmente con marcas de beauty, moda y lifestyle.">I'm looking for my next role in Madrid, at an agency or in-house, ideally with beauty, fashion and lifestyle brands.</p>
+      <div class="btns">
+        <a class="btn dark cv" href="Antonella_Sossi_CV_EN.pdf" download="Antonella_Sossi_CV_EN.pdf"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-en="Download CV" data-es="Descargar CV">Download CV</span></a>
+        <a class="btn" href="mailto:antonellasossi@icloud.com" data-en="Get in touch" data-es="Contáctame">Get in touch</a>
+      </div>
+    </div>
+  </section>
+</div></main>
+
+<footer><div class="wrap">
+  <div class="foot"><a href="mailto:antonellasossi@icloud.com">antonellasossi@icloud.com</a><a href="https://www.linkedin.com/in/antonella-sossi/" target="_blank">LinkedIn</a><span data-en="Madrid, Spain" data-es="Madrid, España">Madrid, Spain</span><span>© 2026 Antonella Sossi</span></div>
+  <div class="giant">Antonella Sossi</div>
+</div></footer>
+<script>
+const CV={en:'assets/cv/Antonella_Sossi_CV_EN.pdf',es:'assets/cv/Antonella_Sossi_CV_ES.pdf'};
+function setCV(l){document.querySelectorAll('a.cv').forEach(a=>{a.href=CV[l];a.download='Antonella_Sossi_CV_'+l.toUpperCase()+'.pdf'})}
+setCV('en');
+document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>{
+  const l=b.dataset.l; document.documentElement.lang=l;
+  document.querySelectorAll('.lang button').forEach(x=>x.classList.toggle('on',x===b));
+  document.querySelectorAll('[data-'+l+']').forEach(el=>{el.innerHTML=el.getAttribute('data-'+l)});
+  document.querySelectorAll('[data-href-'+l+']').forEach(el=>{el.setAttribute('href',el.getAttribute('data-href-'+l))});
+  setCV(l);
+}));
+function fit(){const g=document.querySelector('.giant'),cs=getComputedStyle(g.parentElement),w=g.parentElement.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);g.style.fontSize='100px';const r=g.getBoundingClientRect().width;g.style.fontSize=(100*w/r*0.99)+'px';}
+addEventListener('load',fit);addEventListener('resize',fit);document.fonts&&document.fonts.ready.then(fit);
+</script>
+<script>
+(function(){
+  try{ if('scrollRestoration' in history) history.scrollRestoration='manual'; }catch(e){}
+  function top(){
+    if(location.hash){ var t=document.getElementById(location.hash.slice(1)); if(t){ t.scrollIntoView({behavior:'instant',block:'start'}); return; } }
+    window.scrollTo({top:0,left:0,behavior:'instant'});
+  }
+  top(); window.addEventListener('load',top); window.addEventListener('pageshow',top);
+})();
+(function(){try{
+  var q=new URLSearchParams(location.search).get('lang'), l=q;
+  try{ if(!l) l=localStorage.getItem('lang'); }catch(e){}
+  document.querySelectorAll('.lang button').forEach(function(b){
+    b.addEventListener('click',function(){ try{localStorage.setItem('lang',b.dataset.l);}catch(e){} });
+  });
+  if(l==='es'){ var b=document.querySelector('.lang button[data-l="es"]'); if(b) b.click(); }
+}catch(e){}})();
+</script>
+</body>
+</html>

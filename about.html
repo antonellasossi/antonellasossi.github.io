@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Antonella Sossi — Brand & Creative Strategist based in Madrid. Campaigns, brand identities and experiences for fashion, beauty and lifestyle.">
+<meta property="og:title" content="About — Antonella Sossi">
+<meta property="og:description" content="Antonella Sossi — Brand & Creative Strategist based in Madrid. Campaigns, brand identities and experiences for fashion, beauty and lifestyle.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<title>About — Antonella Sossi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FFFEFC; --paper:#FFFFFF; --ink:#1B1815; --muted:#6F655C; --mocha:#8A7262; --line:#E9E4DD;
+  --tint:#EFE7DE; --tint2:#E5D8CB;
+  --sans:'Helvetica Neue',Helvetica,'Inter',Arial,sans-serif; --serif:'Instrument Serif',Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.06;z-index:0;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .4 0 0 0 0 .35 0 0 0 0 .3 0 0 0 .08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+main,nav,footer{position:relative;z-index:1}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+em.s{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mocha)}
+.pill{display:inline-flex;align-items:center;border:1px solid var(--ink);border-radius:999px;padding:5px 12px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:var(--paper);white-space:nowrap}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:20;padding:16px 0;background:linear-gradient(var(--cream) 70%,transparent)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'Pinyon Script',cursive;font-size:28px;line-height:1}
+.navpills{display:flex;gap:6px}
+.navpills a{text-decoration:none;color:var(--ink)}
+.navpills a.on{background:var(--ink);color:var(--paper)}
+.lang{display:flex;border:1px solid var(--ink);border-radius:999px;overflow:hidden}
+.lang button{border:0;background:transparent;font:600 11px var(--sans);letter-spacing:.08em;padding:6px 10px;cursor:pointer;color:var(--ink)}
+.lang button.on{background:var(--mocha);color:var(--paper)}
+
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:14px;padding:12px 20px;border-radius:999px;border:1px solid var(--ink);color:var(--ink);background:transparent}
+.btn.dark{background:var(--ink);color:var(--paper)}
+.btn:hover{background:var(--mocha);border-color:var(--mocha);color:var(--paper)}
+
+/* HEADER */
+.atop{padding:7vh 0 5vh}
+.atop h1{font-weight:700;text-transform:uppercase;font-size:clamp(40px,6.4vw,100px);line-height:.95;letter-spacing:-.045em;max-width:14ch}
+.atop h1 em{text-transform:none;font-size:1.08em}
+
+/* GRID */
+.grid{display:grid;gap:14px}
+.r1{grid-template-columns:1fr 1.15fr}
+.r2{grid-template-columns:1.15fr 1fr;margin-top:14px}
+.r3{grid-template-columns:1fr 2fr;margin-top:14px}
+.card{background:var(--paper);border-radius:18px;padding:36px;border:1px solid var(--line)}
+.card > .eyebrow{display:block;margin-bottom:22px}
+
+.ph{position:relative;border-radius:18px;overflow:hidden;min-height:580px;background:#cfd8e3}
+.ph img{position:absolute;inset:0;object-position:50% 60%}
+.ph .tagf{position:absolute;left:14px;bottom:14px}
+
+.me{display:flex;flex-direction:column;justify-content:space-between}
+.me p{font-size:18px;line-height:1.55}
+.me p + p{margin-top:16px}
+.sig{font-family:'Pinyon Script',cursive;font-size:44px;margin-top:24px;line-height:1}
+
+/* TOOLS */
+.tl{list-style:none}
+.tl li{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;padding:12px 0;border-top:1px solid var(--line)}
+.tl li:last-child{border-bottom:1px solid var(--line)}
+.lgs{display:flex}
+.lgs i{display:grid;place-items:center;width:46px;height:46px;border-radius:13px;background:var(--cream);border:1px solid var(--line);padding:8px}
+.lgs i + i{margin-left:-10px;box-shadow:-2px 0 0 var(--paper)}
+.lgs i.wm{padding:4px}
+.lgs img{width:100%;height:100%;object-fit:contain}
+.tl b{display:block;font-size:16px;font-weight:700;letter-spacing:-.01em}
+.tl span{display:block;font-size:14px;color:var(--muted)}
+
+/* MY EXPERIENCE */
+.xpl{list-style:none}
+.xpl li{padding:20px 0;border-top:1px solid var(--line)}
+.xpl li:last-child{border-bottom:1px solid var(--line)}
+.xpl b{display:block;font-size:20px;font-weight:700;letter-spacing:-.02em;line-height:1.15}
+.xpl .at{display:block;font-family:var(--serif);font-style:italic;font-size:21px;margin:2px 0 10px}
+.date{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.06em;padding:5px 11px;border-radius:999px;background:#F2EDE6}
+.xpc{display:flex;flex-direction:column}
+.xpc .btn{align-self:flex-start;margin-top:24px}
+
+/* CURRENTLY */
+.now{list-style:none}
+.now li{display:flex;gap:14px;align-items:center;padding:14px 0;border-top:1px solid var(--line);font-size:16px}
+.now li:last-child{border-bottom:1px solid var(--line)}
+.now li i{flex:0 0 auto;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--tint)}
+.now svg{width:18px;height:18px;stroke:var(--mocha);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#7FA36B;margin-right:8px;box-shadow:0 0 0 4px rgba(127,163,107,.18)}
+
+/* WHAT I BRING */
+.bring{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.bi{display:flex;flex-direction:column;gap:10px}
+.bi > i{font-style:normal;display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--paper);font-size:13px;font-weight:600}
+.bi h4{font-size:19px;font-weight:700;letter-spacing:-.02em;line-height:1.15}
+.bi p{color:var(--muted);font-size:14.5px}
+
+/* CLOSING */
+.sec{padding:12vh 0 0}
+.band{background:var(--tint);border-radius:24px;padding:56px 40px;text-align:center}
+.band h3{font-family:var(--serif);font-weight:400;font-size:clamp(44px,6.5vw,96px);line-height:1}
+.band p{color:var(--muted);max-width:52ch;margin:18px auto 28px}
+.band .btns{justify-content:center}
+
+footer{border-top:1px solid var(--ink);padding:26px 0 0;overflow:hidden;margin-top:14vh}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.foot a{color:var(--ink)}
+.giant{font-weight:700;text-transform:uppercase;font-size:10vw;display:inline-block;line-height:.9;letter-spacing:-.05em;white-space:nowrap;margin:28px 0 24px;color:var(--ink)}
+.proto{position:fixed;bottom:14px;right:14px;z-index:30;background:var(--mocha);color:var(--paper);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:7px 12px;border-radius:999px}
+
+@media (max-width:860px){
+  .wrap{padding:0 16px}
+  .navpills{display:none}
+  .r1,.r2,.r3{grid-template-columns:1fr}
+  .ph{min-height:460px}
+  .card{padding:24px}
+  .bring{grid-template-columns:1fr;gap:22px}
+  .band{padding:40px 22px}
+}
+</style>
+<style>section[id],header[id]{scroll-margin-top:72px}</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="index.html" style="color:inherit;text-decoration:none">Antonella Sossi</a>
+  <div class="navpills">
+    <a class="pill" href="index.html" data-en="Home" data-es="Inicio">Home</a>
+    <a class="pill" href="index.html#work" data-en="Work" data-es="Proyectos">Work</a>
+    <a class="pill on" href="#top" data-en="About" data-es="Sobre mí">About</a>
+  </div>
+  <div class="lang"><button class="on" data-l="en">EN</button><button data-l="es">ES</button></div>
+</div></nav>
+
+<main id="top"><div class="wrap">
+  <header class="atop">
+    <h1 data-en="The <em class='s'>creative</em> behind the strategy" data-es="La <em class='s'>creativa</em> detrás de la estrategia">The <em class="s">creative</em> behind the strategy</h1>
+  </header>
+
+  <!-- ROW 1: photo + about me -->
+  <div class="grid r1">
+    <div class="ph"><img src="assets/img/about/porto.jpg" alt="Antonella in Porto"><span class="pill tagf">Porto, Portugal</span></div>
+    <div class="card me">
+      <div>
+        <div class="eyebrow" data-en="About me" data-es="Sobre mí" style="margin-bottom:22px">About me</div>
+        <p data-en="I'm genuinely into beauty, fashion, makeup and lifestyle: not just as industries I want to work in, but as worlds I live in every day. I've always been the creative one, the one with a new idea. I've travelled to more than 15 countries, and every culture I discover ends up shaping how I see brands and the people they speak to." data-es="Me apasionan de verdad la belleza, la moda, el maquillaje y el lifestyle: no solo como sectores en los que quiero trabajar, sino como mundos que vivo cada día. Siempre he sido la creativa, la que llega con una idea nueva. He viajado a más de 15 países, y cada cultura que descubro acaba influyendo en cómo veo las marcas y a las personas a las que hablan.">I'm genuinely into beauty, fashion, makeup and lifestyle: not just as industries I want to work in, but as worlds I live in every day. I've always been the creative one, the one with a new idea. I've travelled to more than 15 countries, and every culture I discover ends up shaping how I see brands and the people they speak to.</p>
+      </div>
+      <div class="sig">Antonella</div>
+    </div>
+  </div>
+
+  <!-- ROW 2: tools + my experience -->
+  <div class="grid r2">
+    <div class="card">
+      <span class="eyebrow" data-en="Tools" data-es="Herramientas">Tools</span>
+      <ul class="tl">
+        <li><div class="lgs"><i><img src="assets/logos/canva.png" alt=""></i></div><div><b>Canva</b><span data-en="Brand assets &amp; quick design" data-es="Piezas de marca y diseño rápido">Brand assets &amp; quick design</span></div></li>
+        <li><div class="lgs"><i><img src="assets/logos/photoshop.png" alt=""></i></div><div><b>Photoshop</b><span data-en="Retouching &amp; mockups" data-es="Retoque y mockups">Retouching &amp; mockups</span></div></li>
+        <li><div class="lgs"><i><img src="assets/logos/illustrator.png" alt=""></i></div><div><b>Illustrator</b><span data-en="Vector basics" data-es="Vectores básicos">Vector basics</span></div></li>
+        <li><div class="lgs"><i><img src="assets/logos/figma.png" alt=""></i></div><div><b>Figma</b><span data-en="Layouts &amp; presentations" data-es="Maquetas y presentaciones">Layouts &amp; presentations</span></div></li>
+        <li><div class="lgs"><i><img src="assets/logos/lightroom.svg" alt=""></i></div><div><b>Lightroom</b><span data-en="Photo editing" data-es="Edición de fotos">Photo editing</span></div></li>
+        <li><div class="lgs"><i><img src="assets/logos/capcut.png" alt=""></i></div><div><b>CapCut</b><span data-en="Video editing" data-es="Edición de vídeo">Video editing</span></div></li>
+        <li><div class="lgs"><i><img src="assets/logos/notion.png" alt=""></i></div><div><b>Notion</b><span data-en="Planning &amp; workflows" data-es="Planificación y flujos de trabajo">Planning &amp; workflows</span></div></li>
+        <li><div class="lgs"><i><img src="assets/logos/chatgpt.png" alt=""></i><i><img src="assets/logos/claude.png" alt=""></i></div><div><b>ChatGPT · Claude</b><span data-en="Research &amp; ideation" data-es="Investigación e ideación">Research &amp; ideation</span></div></li>
+        <li><div class="lgs"><i><img src="assets/logos/n8n.png" alt=""></i></div><div><b>n8n</b><span data-en="Automation" data-es="Automatización">Automation</span></div></li>
+        <li><div class="lgs"><i class="wm"><img src="assets/logos/metricool.png" alt=""></i><i class="wm"><img src="assets/logos/later.png" alt=""></i><i><img src="assets/logos/buffer.png" alt=""></i></div><div><b>Metricool · Later · Buffer</b><span data-en="Scheduling &amp; analytics" data-es="Programación y analítica">Scheduling &amp; analytics</span></div></li>
+      </ul>
+    </div>
+    <div class="card xpc">
+      <span class="eyebrow" data-en="My experience" data-es="Mi experiencia">My experience</span>
+      <ul class="xpl">
+        <li><b>Brand &amp; Creative Strategist</b><span class="at">TrepCamp</span><span class="date" data-en="2024 — Present" data-es="2024 — Actualidad">2024 — Present</span></li>
+        <li><b>Founder &amp; Creative Director</b><span class="at">Vibra Alto</span><span class="date">2020 — 2022</span></li>
+        <li><b data-en="Master in Fashion Communication" data-es="Máster en Comunicación de Moda">Master in Fashion Communication</b><span class="at">IED Madrid</span><span class="date">2024 — 2025</span></li>
+      </ul>
+      <a class="btn" href="experience.html" data-en="View full experience →" data-es="Ver experiencia completa →">View full experience →</a>
+    </div>
+  </div>
+
+  <!-- ROW 3: currently + what I bring -->
+  <div class="grid r3">
+    <div class="card">
+      <span class="eyebrow"><span class="dot"></span><span data-en="Currently" data-es="Ahora mismo">Currently</span></span>
+      <ul class="now">
+        <li><i><svg viewBox="0 0 24 24"><path d="M4 5h9M8.5 3v2M6 5c0 4 3 7 7 8M11 5c-1 4-4 7-7 8"/><path d="M13 21l4-9 4 9M14.5 18h5"/></svg></i><span data-en="Learning Italian" data-es="Aprendiendo italiano">Learning Italian</span></li>
+        <li><i><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></i><span data-en="Growing my TikTok" data-es="Haciendo crecer mi TikTok">Growing my TikTok</span></li>
+        <li><i><svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></i><span data-en="Learning AI &amp; automation" data-es="Aprendiendo IA y automatización">Learning AI &amp; automation</span></li>
+        <li><i><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></i><span data-en="Finding Madrid's best hidden spots" data-es="Descubriendo los mejores rincones de Madrid">Finding Madrid's best hidden spots</span></li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="eyebrow" data-en="What I bring" data-es="Lo que aporto">What I bring</span>
+      <div class="bring">
+        <div class="bi"><i>01</i><h4 data-en="I can learn anything" data-es="Aprendo lo que sea">I can learn anything</h4><p data-en="If I don't know how to do something, I learn it, fast. From inventory and sales to video editing and AI automation, I've taught myself most of the skills I use today." data-es="Si no sé hacer algo, lo aprendo, y rápido. Del inventario y las ventas a la edición de vídeo y la automatización con IA, he aprendido sola la mayoría de las habilidades que uso hoy.">If I don't know how to do something, I learn it, fast. From inventory and sales to video editing and AI automation, I've taught myself most of the skills I use today.</p></div>
+        <div class="bi"><i>02</i><h4 data-en="A different point of view" data-es="Un punto de vista diferente">A different point of view</h4><p data-en="Studying in Bolivia, the US and Spain, and travelling to 15+ countries, taught me to see brands through many eyes. I bring ideas that don't come from the usual places." data-es="Estudiar en Bolivia, Estados Unidos y España, y viajar a más de 15 países, me enseñó a ver las marcas con muchos ojos. Aporto ideas que no salen de los sitios de siempre.">Studying in Bolivia, the US and Spain, and travelling to 15+ countries, taught me to see brands through many eyes. I bring ideas that don't come from the usual places.</p></div>
+        <div class="bi"><i>03</i><h4 data-en="From idea to execution" data-es="De la idea a la ejecución">From idea to execution</h4><p data-en="I started in operations, so I don't stop at the concept. I know what it takes to make an idea happen: timelines, suppliers, venues and people." data-es="Empecé en operaciones, así que no me quedo en el concepto. Sé lo que hace falta para que una idea pase: tiempos, proveedores, espacios y personas.">I started in operations, so I don't stop at the concept. I know what it takes to make an idea happen: timelines, suppliers, venues and people.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLOSING -->
+  <section class="sec">
+    <div class="band">
+      <h3 data-en="Let's build something <em class='s'>people remember.</em>" data-es="Creemos algo que <em class='s'>la gente recuerde.</em>">Let's build something <em class="s">people remember.</em></h3>
+      <p data-en="I'm looking for my next role in Madrid, at an agency or in-house, ideally with beauty, fashion and lifestyle brands." data-es="Busco mi próximo reto en Madrid, en agencia o in-house, idealmente con marcas de beauty, moda y lifestyle.">I'm looking for my next role in Madrid, at an agency or in-house, ideally with beauty, fashion and lifestyle brands.</p>
+      <div class="btns">
+        <a class="btn dark" href="mailto:antonellasossi@icloud.com" data-en="Get in touch" data-es="Escríbeme">Get in touch</a>
+        <a class="btn" href="experience.html" data-en="View CV" data-es="Ver CV">View CV</a>
+      </div>
+    </div>
+  </section>
+</div></main>
+
+<footer><div class="wrap">
+  <div class="foot"><a href="mailto:antonellasossi@icloud.com">antonellasossi@icloud.com</a><a href="https://www.linkedin.com/in/antonella-sossi/" target="_blank">LinkedIn</a><span data-en="Madrid, Spain" data-es="Madrid, España">Madrid, Spain</span><span>© 2026 Antonella Sossi</span></div>
+  <div class="giant">Antonella Sossi</div>
+</div></footer>
+<script>
+document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>{
+  const l=b.dataset.l; document.documentElement.lang=l;
+  document.querySelectorAll('.lang button').forEach(x=>x.classList.toggle('on',x===b));
+  document.querySelectorAll('[data-'+l+']').forEach(el=>{el.innerHTML=el.getAttribute('data-'+l)});
+}));
+function fit(){const g=document.querySelector('.giant'),cs=getComputedStyle(g.parentElement),w=g.parentElement.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);g.style.fontSize='100px';const r=g.getBoundingClientRect().width;g.style.fontSize=(100*w/r*0.99)+'px';}
+addEventListener('load',fit);addEventListener('resize',fit);document.fonts&&document.fonts.ready.then(fit);
+</script>
+<script>
+(function(){
+  try{ if('scrollRestoration' in history) history.scrollRestoration='manual'; }catch(e){}
+  function top(){
+    if(location.hash){ var t=document.getElementById(location.hash.slice(1)); if(t){ t.scrollIntoView({behavior:'instant',block:'start'}); return; } }
+    window.scrollTo({top:0,left:0,behavior:'instant'});
+  }
+  top(); window.addEventListener('load',top); window.addEventListener('pageshow',top);
+})();
+(function(){try{
+  var q=new URLSearchParams(location.search).get('lang'), l=q;
+  try{ if(!l) l=localStorage.getItem('lang'); }catch(e){}
+  document.querySelectorAll('.lang button').forEach(function(b){
+    b.addEventListener('click',function(){ try{localStorage.setItem('lang',b.dataset.l);}catch(e){} });
+  });
+  if(l==='es'){ var b=document.querySelector('.lang button[data-l="es"]'); if(b) b.click(); }
+}catch(e){}})();
+</script>
+</body>
+</html>

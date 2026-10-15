@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Antonella Sossi — Brand & Creative Strategist based in Madrid. Campaigns, brand identities and experiences for fashion, beauty and lifestyle.">
+<meta property="og:title" content="Content Production — Antonella Sossi">
+<meta property="og:description" content="Antonella Sossi — Brand & Creative Strategist based in Madrid. Campaigns, brand identities and experiences for fashion, beauty and lifestyle.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<title>Content Production — Antonella Sossi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FFFEFC; --paper:#FFFFFF; --ink:#1B1815; --muted:#6F655C; --mocha:#8A7262; --line:#E9E4DD;
+  --sans:'Helvetica Neue',Helvetica,'Inter',Arial,sans-serif; --serif:'Instrument Serif',Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.06;z-index:0;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .4 0 0 0 0 .35 0 0 0 0 .3 0 0 0 .08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+main,nav,footer{position:relative;z-index:1}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+em.s{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mocha)}
+.pill{display:inline-flex;align-items:center;border:1px solid var(--ink);border-radius:999px;padding:5px 12px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:var(--paper);white-space:nowrap}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:20;padding:16px 0;background:linear-gradient(var(--cream) 70%,transparent)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'Pinyon Script',cursive;font-size:28px;line-height:1}
+.navpills{display:flex;gap:6px}
+.navpills a{text-decoration:none;color:var(--ink)}
+.navpills a.on{background:var(--ink);color:var(--paper)}
+.lang{display:flex;border:1px solid var(--ink);border-radius:999px;overflow:hidden}
+.lang button{border:0;background:transparent;font:600 11px var(--sans);letter-spacing:.08em;padding:6px 10px;cursor:pointer;color:var(--ink)}
+.lang button.on{background:var(--mocha);color:var(--paper)}
+
+/* HERO */
+.hero{padding:9vh 0 6vh}
+.big{font-weight:700;text-transform:uppercase;font-size:clamp(34px,7.6vw,116px);line-height:1;letter-spacing:-.04em}
+.big span{white-space:nowrap}
+.row{display:flex;align-items:center;gap:clamp(8px,1.4vw,20px);flex-wrap:nowrap}
+.row.r2{justify-content:space-between}
+.row.r3{justify-content:flex-end}
+.thumb{flex:0 0 auto;width:clamp(70px,11vw,170px);aspect-ratio:4/3;border-radius:10px;overflow:hidden;transform:translateY(4%)}
+.thumb.tall{aspect-ratio:3/4;width:clamp(52px,7vw,110px)}
+.hero-sub{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;margin-top:7vh;align-items:end}
+.hero-sub h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.6vw,52px);line-height:1.05;letter-spacing:-.01em}
+.hero-sub p{color:var(--muted);max-width:46ch}
+.btns{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:14px;padding:12px 20px;border-radius:999px;border:1px solid var(--ink);color:var(--ink)}
+.btn.dark{background:var(--ink);color:var(--paper)}
+.btn:hover{background:var(--mocha);border-color:var(--mocha);color:var(--paper)}
+
+/* SECTIONS */
+section{padding:11vh 0}
+.intro{text-align:center}
+.intro p{font-family:var(--serif);font-size:clamp(24px,2.7vw,38px);line-height:1.2;max-width:24ch*2;max-width:900px;margin:18px auto 0}
+.intro p em{color:var(--mocha)}
+
+.nums{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.num{padding:44px 28px}
+.num+.num{border-left:1px solid var(--line)}
+.num b{display:block;font-family:var(--sans);font-weight:700;font-size:clamp(52px,6.4vw,96px);line-height:.9;letter-spacing:-.045em}
+.num span{display:block;margin-top:14px;color:var(--muted);max-width:22ch}
+
+.head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:36px;flex-wrap:wrap}
+.head h3{font-weight:700;text-transform:uppercase;font-size:clamp(36px,5vw,72px);line-height:.9;letter-spacing:-.03em}
+
+.xp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--paper);border-radius:18px;padding:26px;border:1px solid var(--line)}
+.xp .card h4{font-size:20px;font-weight:800;letter-spacing:-.01em}
+.xp .role{font-family:var(--serif);font-style:italic;font-size:21px;margin:4px 0 12px}
+.xp .card p{color:var(--muted);font-size:14px}
+.date{display:inline-block;margin-top:18px;font-size:11px;font-weight:600;letter-spacing:.06em;padding:4px 10px;border-radius:999px;background:#F2EDE6}
+.edu li{list-style:none;font-size:14px;padding:7px 0;border-bottom:1px solid var(--line)}
+.edu li:last-child{border:0}
+.edu li b{display:block;font-weight:700}
+.edu li span{color:var(--muted)}
+
+.work{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.wc{position:relative;border-radius:18px;overflow:hidden;min-height:420px;text-decoration:none;color:var(--ink);background:#ddd}
+.wc:nth-child(1),.wc:nth-child(2){grid-column:span 3;min-height:520px}
+.wc:nth-child(n+3){grid-column:span 2}
+.wc img{position:absolute;inset:0;transition:transform .6s ease}
+.wc:hover img{transform:scale(1.04)}
+.wc .lab{position:absolute;left:14px;right:14px;bottom:14px;background:var(--paper);border-radius:14px;padding:16px 18px}
+.wc .lab .eyebrow{font-size:10px}
+.wc .lab h5{font-size:19px;font-weight:800;letter-spacing:-.01em;margin:4px 0 4px}
+.wc .lab p{font-size:13px;color:var(--muted)}
+.wc .no{position:absolute;top:14px;left:14px}
+
+.about{display:grid;grid-template-columns:1fr 1.15fr;gap:14px}
+.about .ph{border-radius:18px;overflow:hidden;min-height:460px}
+.about .card{display:flex;flex-direction:column;justify-content:space-between;padding:36px}
+.about .card p{font-size:18px;line-height:1.55}
+.sig{font-family:'Pinyon Script',cursive;font-size:44px;margin-top:24px}
+
+.cta{text-align:center;padding:14vh 0 8vh}
+.cta h3{font-family:var(--serif);font-weight:400;font-size:clamp(44px,6.5vw,96px);line-height:1}
+.cta p{color:var(--muted);max-width:52ch;margin:20px auto 30px}
+footer{border-top:1px solid var(--ink);padding:26px 0 0;overflow:hidden}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.foot a{color:var(--ink)}
+.giant{transform:none;font-weight:700;text-transform:uppercase;font-size:10vw;display:inline-block;line-height:.9;letter-spacing:-.05em;white-space:nowrap;margin:28px 0 24px;color:var(--ink)}
+.proto{position:fixed;bottom:14px;right:14px;z-index:30;background:var(--mocha);color:var(--paper);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:7px 12px;border-radius:999px}
+
+@media (max-width:860px){
+  .wrap{padding:0 16px}
+  .navpills{display:none}
+  .row{flex-wrap:wrap}
+  .big{font-size:9.4vw}
+  .big .row{flex-wrap:wrap}
+  .thumb{width:30vw}
+  .thumb.tall{width:20vw}
+  .big .pill{font-size:10px}
+  .hero-sub,.about{grid-template-columns:1fr}
+  .nums{grid-template-columns:1fr}
+  .num+.num{border-left:0;border-top:1px solid var(--line)}
+  .xp{grid-template-columns:1fr}
+  .work{grid-template-columns:1fr}
+  .wc,.wc:nth-child(1),.wc:nth-child(2),.wc:nth-child(n+3){grid-column:auto;min-height:420px}
+  .about .ph{min-height:420px}
+}
+</style>
+<style>section[id],header[id]{scroll-margin-top:72px}</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="index.html" style="color:inherit;text-decoration:none">Antonella Sossi</a>
+  <div class="navpills">
+    <a class="pill" href="index.html" data-en="Home" data-es="Inicio">Home</a>
+    <a class="pill on" href="index.html#work" data-en="Work" data-es="Proyectos">Work</a>
+    <a class="pill" href="about.html" data-en="About" data-es="Sobre mí">About</a>
+  </div>
+  <div class="lang"><button class="on" data-l="en">EN</button><button data-l="es">ES</button></div>
+</div></nav>
+
+<style>
+:root{--tint:#EFE7DE;--tint2:#E5D8CB}
+.back{display:inline-flex;gap:8px;margin-top:36px;font-size:14px;font-weight:600;color:var(--ink);text-decoration:none}
+.ptop{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:end;padding:4vh 0 5vh}
+.ptop h1{font-weight:700;font-size:clamp(46px,6.6vw,100px);line-height:.98;letter-spacing:-.045em}
+.ptop p{color:var(--muted);font-size:18px;line-height:1.6;max-width:38ch}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.fact{background:var(--paper);border-radius:14px;padding:16px 18px;border:1px solid var(--line)}
+.fact small{display:block;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--mocha);margin-bottom:4px}
+.fact span{font-size:16px;font-weight:600;letter-spacing:-.01em}
+.mosaic{margin-top:16px;border-radius:22px;overflow:hidden;display:grid;grid-template-columns:repeat(6,1fr);gap:3px;background:var(--ink)}
+.mosaic img{aspect-ratio:3/4;height:auto}
+.sec{padding:12vh 0 0}
+.num-h{display:flex;align-items:baseline;gap:10px;color:var(--muted);font-size:15px;margin-bottom:12px}
+.num-h b{color:var(--ink);font-weight:600}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.two h3{font-size:clamp(26px,2.4vw,34px);font-weight:700;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.two p{color:var(--muted);font-size:17px;line-height:1.65}
+.icons{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:6px}
+.ic{text-align:center;font-size:13px;font-weight:600;line-height:1.25}
+.ic span{display:grid;place-items:center;width:62px;height:62px;border-radius:50%;background:var(--tint);margin:0 auto 10px}
+.ic svg{width:26px;height:26px;stroke:var(--mocha);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.did{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.d{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.d i{font-style:normal;display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--paper);font-size:13px;font-weight:600}
+.d h4{font-size:19px;font-weight:700;letter-spacing:-.02em}
+.d p{color:var(--muted);font-size:14.5px}
+.book{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+.book figure{border-radius:18px;overflow:hidden;aspect-ratio:1/1.1;background:#1d2a6b}
+.book img{object-position:top}
+.cap{font-size:13px;color:var(--muted);margin-top:10px}
+.band{background:var(--tint);border-radius:24px;padding:40px;display:grid;grid-template-columns:.9fr 2fr;gap:36px;align-items:center}
+.band h3{font-size:clamp(30px,3.2vw,46px);font-weight:700;letter-spacing:-.04em;line-height:1}
+.band h3 em{font-family:var(--serif);font-weight:400;font-style:italic;letter-spacing:0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.stats div{padding:0 20px;border-left:1px solid var(--tint2)}
+.stats b{display:block;white-space:nowrap;font-size:clamp(24px,2.4vw,36px);font-weight:700;letter-spacing:-.04em;line-height:1}
+.stats span{display:block;font-size:13px;color:var(--muted);margin-top:8px}
+.proof{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.proof figure{border-radius:18px;overflow:hidden;background:#0d0d0d;aspect-ratio:16/11}
+.proof img{object-fit:contain}
+.next{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:14vh;padding:6vh 0;text-decoration:none;color:var(--ink);border-top:1px solid var(--ink)}
+.next b{font-weight:700;font-size:clamp(30px,4.4vw,64px);line-height:1;letter-spacing:-.04em}
+.arrow{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:var(--ink);color:var(--paper);font-size:24px;flex:0 0 auto}
+@media (max-width:860px){
+  .ptop,.two,.band{grid-template-columns:1fr;gap:20px}
+  .facts{grid-template-columns:1fr 1fr}
+  .mosaic{grid-template-columns:repeat(3,1fr)}
+  .mosaic img:nth-child(n+7){display:none}
+  .did,.book,.proof{grid-template-columns:1fr}
+  .icons{grid-template-columns:repeat(3,1fr);row-gap:18px}
+  .stats{grid-template-columns:1fr 1fr;row-gap:22px}
+  .stats div:nth-child(3){border-left:0;padding-left:0}
+  .stats div:first-child{padding-left:0;border-left:0}
+  .band{padding:26px}
+}
+</style><style>
+.galC{margin-top:16px;display:grid;grid-template-columns:1fr 1.3fr 1fr 1fr;grid-template-rows:250px 250px;gap:10px}
+.galC figure{border-radius:16px;overflow:hidden;background:#eee}
+.galC figure:nth-child(1){grid-row:span 2}
+.galC figure:nth-child(4){grid-row:span 2}
+.ct{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:32px;display:flex;flex-direction:column;gap:14px}
+.ct .eyebrow{font-size:11px}
+.ct h4{font-size:clamp(24px,2.4vw,32px);font-weight:700;letter-spacing:-.03em;line-height:1.05}
+.ct ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.ct li{color:var(--muted);font-size:15px;line-height:1.55;padding-left:18px;position:relative}
+.ct li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--mocha)}
+
+.bts{display:grid;grid-template-columns:.9fr 1.1fr;gap:16px;margin-top:16px;align-items:stretch}
+.bts .ph1{border-radius:22px;overflow:hidden;height:520px}
+.lab{display:grid;grid-template-columns:1.1fr .45fr .45fr;gap:12px;align-items:stretch}
+.lab .ct{justify-content:center}
+.tk{position:relative;display:block;aspect-ratio:9/16;border-radius:18px;overflow:hidden;background:var(--ink);color:var(--paper);text-decoration:none}
+.tk img{position:absolute;inset:0}
+.tk .tag{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(255,255,255,.94);color:var(--ink);border-radius:12px;padding:10px 12px}
+.tk .tag b{display:block;font-size:20px;font-weight:700;letter-spacing:-.03em;line-height:1}
+.tk .tag span{font-size:12px;color:var(--muted)}
+.tk.solid{display:flex;flex-direction:column;justify-content:space-between;padding:20px;background:var(--tint)}
+.tk.solid .big2{font-weight:700;font-size:clamp(38px,4vw,58px);letter-spacing:-.05em;line-height:.9;color:var(--ink)}
+.tk.solid p{color:var(--muted);font-size:14px}
+.tk.solid .tag{position:static;background:var(--paper)}
+.vstrip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.vstrip figure{border-radius:16px;overflow:hidden;aspect-ratio:3/4}
+@media (max-width:860px){
+  .galC{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .galC figure{aspect-ratio:4/5;grid-row:auto!important}
+  .bts,.lab{grid-template-columns:1fr}
+  .bts .ph1{height:420px}
+  .vstrip{grid-template-columns:1fr 1fr}
+}
+</style>
+<main id="top"><div class="wrap">
+  <a class="back" href="index.html#work" data-en="← All projects" data-es="← Todos los proyectos">← All projects</a>
+
+  <header class="ptop">
+    <h1 data-en="Content<br>Production" data-es="Producción<br>de contenido">Content<br>Production</h1>
+    <p data-en="I don't just brief it. I can shoot it too. Knowing how content is made, on set, at an event, behind the camera, is what makes my concepts and briefs realistic." data-es="No solo lo planteo. También sé producirlo. Saber cómo se hace el contenido (en un set, en un evento, detrás de cámara) es lo que hace que mis conceptos y briefs sean realistas.">I don't just brief it. I can shoot it too. Knowing how content is made, on set, at an event, behind the camera, is what makes my concepts and briefs realistic.</p>
+  </header>
+
+  <div class="facts">
+    <div class="fact"><small data-en="Work for" data-es="Para">Work for</small><span data-en="TrepCamp · Vibra Alto · Personal" data-es="TrepCamp · Vibra Alto · Personal">TrepCamp · Vibra Alto · Personal</span></div>
+    <div class="fact"><small data-en="Formats" data-es="Formatos">Formats</small><span data-en="Photo · Video · Interviews" data-es="Foto · Vídeo · Entrevistas">Photo · Video · Interviews</span></div>
+    <div class="fact"><small data-en="Tools" data-es="Herramientas">Tools</small><span>Lightroom · CapCut · Canva</span></div>
+    <div class="fact"><small data-en="Platforms" data-es="Plataformas">Platforms</small><span>Instagram · TikTok</span></div>
+  </div>
+
+  <div class="galC">
+    <figure><img src="assets/img/content/01.jpg" alt=""></figure>
+    <figure><img src="assets/img/events/14.jpg" alt=""></figure>
+    <figure><img src="assets/img/events/11.jpg" alt=""></figure>
+    <figure><img src="assets/img/content/02.jpg" alt="" style="object-position:center 30%"></figure>
+    <figure><img src="assets/img/events/13.jpg" alt="" style="object-position:center 60%"></figure>
+    <figure><img src="assets/img/content/03.jpg" alt=""></figure>
+  </div>
+  <p class="cap" data-en="All photographed by me: LOEWE and BUND masterclasses, Forbes 30 Under 30, and TrepCamp programs in Madrid." data-es="Todas fotografiadas por mí: masterclasses de LOEWE y BUND, Forbes 30 Under 30 y programas de TrepCamp en Madrid.">All photographed by me: LOEWE and BUND masterclasses, Forbes 30 Under 30, and TrepCamp programs in Madrid.</p>
+
+  <section class="sec two">
+    <div>
+      <div class="num-h"><b>01</b> / <span data-en="Why it matters" data-es="Por qué importa">Why it matters</span></div>
+      <h3 data-en="Strategy that can be made." data-es="Estrategia que se puede producir.">Strategy that can be made.</h3>
+      <p data-en="Before moving into strategy, I produced most of TrepCamp's content myself. I know what a shoot needs, how long an edit takes and what actually works on camera, so the ideas I propose are ones a team can bring to life." data-es="Antes de pasar a estrategia, produje yo misma la mayor parte del contenido de TrepCamp. Sé lo que necesita una sesión, cuánto lleva una edición y qué funciona de verdad en cámara, así que las ideas que propongo son ideas que un equipo puede hacer realidad.">Before moving into strategy, I produced most of TrepCamp's content myself. I know what a shoot needs, how long an edit takes and what actually works on camera, so the ideas I propose are ones a team can bring to life.</p>
+    </div>
+    <div>
+      <div class="num-h"><b>02</b> / <span data-en="What I produce" data-es="Qué produzco">What I produce</span></div>
+      <h3 data-en="Behind the camera." data-es="Detrás de la cámara.">Behind the camera.</h3>
+      <div class="icons">
+        <div class="ic"><span><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></span><b data-en="Photography" data-es="Fotografía">Photography</b></div>
+        <div class="ic"><span><svg viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg></span><b data-en="Video" data-es="Vídeo">Video</b></div>
+        <div class="ic"><span><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0 0 12 0M12 17v4"/></svg></span><b data-en="Interviews" data-es="Entrevistas">Interviews</b></div>
+        <div class="ic"><span><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span><b data-en="Event coverage" data-es="Cobertura de eventos">Event coverage</b></div>
+        <div class="ic"><span><svg viewBox="0 0 24 24"><circle cx="6" cy="7" r="2.5"/><circle cx="6" cy="17" r="2.5"/><path d="M8 8.5L20 16M8 15.5L20 8"/></svg></span><b data-en="Editing" data-es="Edición">Editing</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="num-h"><b>03</b> / TrepCamp</div>
+    <div class="bts">
+      <div class="ph1"><img src="assets/img/content/04.jpg" alt="" style="object-position:center 40%"></div>
+      <div class="ct">
+        <div class="eyebrow" data-en="Photo · Video · Interviews" data-es="Foto · Vídeo · Entrevistas">Photo · Video · Interviews</div>
+        <h4 data-en="The brand's content, made by me" data-es="El contenido de la marca, hecho por mí">The brand's content, made by me</h4>
+        <ul>
+          <li data-en="Shot the brand's photo library, used across every channel." data-es="Hice la biblioteca de fotos de la marca, que se usa en todos los canales.">Shot the brand's photo library, used across every channel.</li>
+          <li data-en="Filmed the footage for the programs' official trailers." data-es="Grabé el material para los tráilers oficiales de los programas.">Filmed the footage for the programs' official trailers.</li>
+          <li data-en="Covered events, company visits, conferences and masterclasses for social media." data-es="Cubrí eventos, visitas a empresas, conferencias y masterclasses para redes.">Covered events, company visits, conferences and masterclasses for social media.</li>
+          <li data-en="Recorded participant testimonials, and interviewed speakers from LOEWE and BUND." data-es="Grabé testimoniales de participantes y entrevisté a speakers de LOEWE y BUND.">Recorded participant testimonials, and interviewed speakers from LOEWE and BUND.</li>
+          <li data-en="Directed group shoots on location, like this one in Madrid's Retiro park." data-es="Dirigí sesiones grupales en exteriores, como esta en el Retiro de Madrid.">Directed group shoots on location, like this one in Madrid's Retiro park.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="num-h"><b>04</b> / Vibra Alto</div>
+    <div class="vstrip">
+      <figure><img src="assets/img/vibra-alto/02.jpg" alt=""></figure>
+      <figure><img src="assets/img/vibra-alto/06.jpg" alt=""></figure>
+      <figure><img src="assets/img/vibra-alto/01.jpg" alt=""></figure>
+      <figure><img src="assets/img/vibra-alto/03.jpg" alt=""></figure>
+    </div>
+    <p class="cap" data-en="Every model photo, product detail and flat lay of the brand, shot by me. See the full project in Brand Building &amp; Creative Direction." data-es="Todas las fotos con modelo, detalles de producto y flat lays de la marca, hechas por mí. El proyecto completo está en Brand Building.">Every model photo, product detail and flat lay of the brand, shot by me. See the full project in Brand Building &amp; Creative Direction.</p>
+  </section>
+
+  <section class="sec">
+    <div class="num-h"><b>05</b> / <span data-en="Personal work" data-es="Trabajo personal">Personal work</span></div>
+    <div class="lab">
+      <div class="ct">
+        <div class="eyebrow">TikTok</div>
+        <h4 data-en="My personal creative lab" data-es="Mi laboratorio creativo personal">My personal creative lab</h4>
+        <ul>
+          <li data-en="I love creating content so much that I started my own TikTok: travel, lifestyle, fashion, skincare and local recommendations." data-es="Me gusta tanto crear contenido que empecé mi propio TikTok: viajes, lifestyle, moda, skincare y recomendaciones locales.">I love creating content so much that I started my own TikTok: travel, lifestyle, fashion, skincare and local recommendations.</li>
+          <li data-en="It's where I test formats, trends and storytelling with my own audience." data-es="Es donde pruebo formatos, tendencias y storytelling con mi propia audiencia.">It's where I test formats, trends and storytelling with my own audience.</li>
+        </ul>
+      </div>
+      <a class="tk" href="https://vm.tiktok.com/ZN8SNTXhr/" target="_blank">
+        <img src="assets/img/content/05.jpg" alt="">
+        <div class="tag"><b>85.6K</b><span data-en="Cibeles summer cinema · Watch →" data-es="Cine de verano en Cibeles · Ver →">Cibeles summer cinema · Watch →</span></div>
+      </a>
+      <a class="tk" href="https://vm.tiktok.com/ZN8SFMpNX/" target="_blank">
+        <img src="assets/img/content/06.jpg" alt="">
+        <div class="tag"><b>10K+</b><span data-en="Madeira sunrise vlog · Watch →" data-es="Vlog de amanecer en Madeira · Ver →">Madeira sunrise vlog · Watch →</span></div>
+      </a>
+    </div>
+  </section>
+
+
+  <a class="next" href="index.html#work"><div><div class="eyebrow" data-en="Back to" data-es="Volver a">Back to</div><b data-en="All projects" data-es="Todos los proyectos">All projects</b></div><span class="arrow">→</span></a>
+</div></main>
+
+
+<footer><div class="wrap">
+  <div class="foot"><a href="mailto:antonellasossi@icloud.com">antonellasossi@icloud.com</a><a href="https://www.linkedin.com/in/antonella-sossi/" target="_blank" rel="noopener">LinkedIn</a><span>Madrid, Spain</span><span>© 2026 Antonella Sossi</span></div>
+  <div class="giant">Antonella Sossi</div>
+</div></footer>
+<script>
+document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>{
+  const l=b.dataset.l; document.documentElement.lang=l;
+  document.querySelectorAll('.lang button').forEach(x=>x.classList.toggle('on',x===b));
+  document.querySelectorAll('[data-'+l+']').forEach(el=>{el.innerHTML=el.getAttribute('data-'+l)});
+}));
+function fit(){const g=document.querySelector('.giant'),cs=getComputedStyle(g.parentElement),w=g.parentElement.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);g.style.fontSize='100px';const r=g.getBoundingClientRect().width;g.style.fontSize=(100*w/r*0.99)+'px';}
+addEventListener('load',fit);addEventListener('resize',fit);document.fonts&&document.fonts.ready.then(fit);
+</script>
+<script>
+(function(){
+  try{ if('scrollRestoration' in history) history.scrollRestoration='manual'; }catch(e){}
+  function top(){
+    if(location.hash){ var t=document.getElementById(location.hash.slice(1)); if(t){ t.scrollIntoView({behavior:'instant',block:'start'}); return; } }
+    window.scrollTo({top:0,left:0,behavior:'instant'});
+  }
+  top(); window.addEventListener('load',top); window.addEventListener('pageshow',top);
+})();
+(function(){try{
+  var q=new URLSearchParams(location.search).get('lang'), l=q;
+  try{ if(!l) l=localStorage.getItem('lang'); }catch(e){}
+  document.querySelectorAll('.lang button').forEach(function(b){
+    b.addEventListener('click',function(){ try{localStorage.setItem('lang',b.dataset.l);}catch(e){} });
+  });
+  if(l==='es'){ var b=document.querySelector('.lang button[data-l="es"]'); if(b) b.click(); }
+}catch(e){}})();
+</script>
+</body>
+</html>

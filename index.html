@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Antonella Sossi — Brand & Creative Strategist based in Madrid. Campaigns, brand identities and experiences for fashion, beauty and lifestyle.">
+<meta property="og:title" content="Antonella Sossi — Brand & Creative Strategist">
+<meta property="og:description" content="Antonella Sossi — Brand & Creative Strategist based in Madrid. Campaigns, brand identities and experiences for fashion, beauty and lifestyle.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<title>Antonella Sossi — Brand & Creative Strategist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FFFEFC; --paper:#FFFFFF; --ink:#1B1815; --muted:#6F655C; --mocha:#8A7262; --line:#E9E4DD;
+  --sans:'Helvetica Neue',Helvetica,'Inter',Arial,sans-serif; --serif:'Instrument Serif',Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.06;z-index:0;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .4 0 0 0 0 .35 0 0 0 0 .3 0 0 0 .08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+main,nav,footer{position:relative;z-index:1}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+em.s{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mocha)}
+.pill{display:inline-flex;align-items:center;border:1px solid var(--ink);border-radius:999px;padding:5px 12px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:var(--paper);white-space:nowrap}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:20;padding:16px 0;background:linear-gradient(var(--cream) 70%,transparent)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'Pinyon Script',cursive;font-size:28px;line-height:1}
+.navpills{display:flex;gap:6px}
+.navpills a{text-decoration:none;color:var(--ink)}
+.navpills a.on{background:var(--ink);color:var(--paper)}
+.lang{display:flex;border:1px solid var(--ink);border-radius:999px;overflow:hidden}
+.lang button{border:0;background:transparent;font:600 11px var(--sans);letter-spacing:.08em;padding:6px 10px;cursor:pointer;color:var(--ink)}
+.lang button.on{background:var(--mocha);color:var(--paper)}
+
+/* HERO */
+.hero{padding:9vh 0 6vh}
+.big{font-weight:700;text-transform:uppercase;font-size:clamp(34px,7.6vw,116px);line-height:1;letter-spacing:-.04em}
+.big span{white-space:nowrap}
+.row{display:flex;align-items:center;gap:clamp(8px,1.4vw,20px);flex-wrap:nowrap}
+.row.r2{justify-content:space-between}
+.row.r3{justify-content:flex-end}
+.thumb{flex:0 0 auto;width:clamp(70px,11vw,170px);aspect-ratio:4/3;border-radius:10px;overflow:hidden;transform:translateY(4%)}
+.thumb.tall{aspect-ratio:3/4;width:clamp(52px,7vw,110px)}
+.hero-sub{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;margin-top:7vh;align-items:end}
+.hero-sub h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.6vw,52px);line-height:1.05;letter-spacing:-.01em}
+.hero-sub p{color:var(--muted);max-width:46ch}
+.btns{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:14px;padding:12px 20px;border-radius:999px;border:1px solid var(--ink);color:var(--ink)}
+.btn.dark{background:var(--ink);color:var(--paper)}
+.btn:hover{background:var(--mocha);border-color:var(--mocha);color:var(--paper)}
+
+/* SECTIONS */
+section{padding:11vh 0}
+.intro{text-align:center}
+.intro p{font-family:var(--serif);font-size:clamp(24px,2.7vw,38px);line-height:1.2;max-width:24ch*2;max-width:900px;margin:18px auto 0}
+.intro p em{color:var(--mocha)}
+
+.nums{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.num{padding:44px 28px}
+.num+.num{border-left:1px solid var(--line)}
+.num b{display:block;font-family:var(--sans);font-weight:700;font-size:clamp(52px,6.4vw,96px);line-height:.9;letter-spacing:-.045em}
+.num span{display:block;margin-top:14px;color:var(--muted);max-width:22ch}
+
+.head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:36px;flex-wrap:wrap}
+.head h3{font-weight:700;text-transform:uppercase;font-size:clamp(36px,5vw,72px);line-height:.9;letter-spacing:-.03em}
+
+.xp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--paper);border-radius:18px;padding:26px;border:1px solid var(--line)}
+.xp .card h4{font-size:20px;font-weight:800;letter-spacing:-.01em}
+.xp .role{font-family:var(--serif);font-style:italic;font-size:21px;margin:4px 0 12px}
+.xp .card p{color:var(--muted);font-size:14px}
+.date{display:inline-block;margin-top:18px;font-size:11px;font-weight:600;letter-spacing:.06em;padding:4px 10px;border-radius:999px;background:#F2EDE6}
+.edu li{list-style:none;font-size:14px;padding:7px 0;border-bottom:1px solid var(--line)}
+.edu li:last-child{border:0}
+.edu li b{display:block;font-weight:700}
+.edu li span{color:var(--muted)}
+
+.work{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.wc{position:relative;border-radius:18px;overflow:hidden;min-height:420px;text-decoration:none;color:var(--ink);background:#ddd}
+.wc:nth-child(1),.wc:nth-child(2){grid-column:span 3;min-height:520px}
+.wc:nth-child(n+3){grid-column:span 2}
+.wc img{position:absolute;inset:0;transition:transform .6s ease}
+.wc:hover img{transform:scale(1.04)}
+.wc .lab{position:absolute;left:14px;right:14px;bottom:14px;background:var(--paper);border-radius:14px;padding:16px 18px}
+.wc .lab .eyebrow{font-size:10px}
+.wc .lab h5{font-size:19px;font-weight:800;letter-spacing:-.01em;margin:4px 0 4px}
+.wc .lab p{font-size:13px;color:var(--muted)}
+.wc .no{position:absolute;top:14px;left:14px}
+
+.about{display:grid;grid-template-columns:1fr 1.15fr;gap:14px}
+.about .ph{border-radius:18px;overflow:hidden;min-height:460px}
+.about .card{display:flex;flex-direction:column;justify-content:space-between;padding:36px}
+.about .card p{font-size:18px;line-height:1.55}
+.sig{font-family:'Pinyon Script',cursive;font-size:44px;margin-top:24px}
+
+.cta{text-align:center;padding:14vh 0 8vh}
+.cta h3{font-family:var(--serif);font-weight:400;font-size:clamp(44px,6.5vw,96px);line-height:1}
+.cta p{color:var(--muted);max-width:52ch;margin:20px auto 30px}
+footer{border-top:1px solid var(--ink);padding:26px 0 0;overflow:hidden}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.foot a{color:var(--ink)}
+.giant{transform:none;font-weight:700;text-transform:uppercase;font-size:10vw;display:inline-block;line-height:.9;letter-spacing:-.05em;white-space:nowrap;margin:28px 0 24px;color:var(--ink)}
+.proto{position:fixed;bottom:14px;right:14px;z-index:30;background:var(--mocha);color:var(--paper);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:7px 12px;border-radius:999px}
+
+@media (max-width:860px){
+  .wrap{padding:0 16px}
+  .navpills{display:none}
+  .row{flex-wrap:wrap}
+  .big{font-size:9.4vw}
+  .big .row{flex-wrap:wrap}
+  .thumb{width:30vw}
+  .thumb.tall{width:20vw}
+  .big .pill{font-size:10px}
+  .hero-sub,.about{grid-template-columns:1fr}
+  .nums{grid-template-columns:1fr}
+  .num+.num{border-left:0;border-top:1px solid var(--line)}
+  .xp{grid-template-columns:1fr}
+  .work{grid-template-columns:1fr}
+  .wc,.wc:nth-child(1),.wc:nth-child(2),.wc:nth-child(n+3){grid-column:auto;min-height:420px}
+  .about .ph{min-height:420px}
+}
+</style>
+<style>section[id],header[id]{scroll-margin-top:72px}</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="index.html" style="color:inherit;text-decoration:none">Antonella Sossi</a>
+  <div class="navpills">
+    <a class="pill on" href="#top" data-en="Home" data-es="Inicio">Home</a>
+    <a class="pill" href="#work" data-en="Work" data-es="Proyectos">Work</a>
+    <a class="pill" href="about.html" data-en="About" data-es="Sobre mí">About</a>
+  </div>
+  <div class="lang"><button class="on" data-l="en">EN</button><button data-l="es">ES</button></div>
+</div></nav>
+
+<main id="top">
+<header class="hero"><div class="wrap">
+  <div class="eyebrow" data-en="Brand &amp; Creative Strategist — Based in Madrid" data-es="Brand &amp; Creative Strategist — Con sede en Madrid">Brand &amp; Creative Strategist — Based in Madrid</div>
+  <div class="big" style="margin-top:22px">
+    <div class="row"><span data-en="Hi, I'm Antonella" data-es="Hola, soy Antonella">Hi, I'm Antonella</span></div>
+    <div class="row"><span>Brand &amp; Creative</span><span class="pill" data-en="Based in Madrid" data-es="Con sede en Madrid">Based in Madrid</span></div>
+    <div class="row"><span>Strategist</span></div>
+  </div>
+  <div class="hero-sub">
+    <h2 data-en="I make brands feel <em class='s'>relevant</em> to the people they're trying to reach." data-es="Hago que las marcas <em class='s'>conecten</em> con la gente a la que quieren llegar.">I make brands feel <em class="s">relevant</em> to the people they're trying to reach.</h2>
+    <div>
+      <p data-en="Marketing strategist with a background in fashion communication. I build campaigns, brand identities and experiences from concept to execution, with a focus on fashion, beauty and lifestyle." data-es="Estratega de marketing con formación en comunicación de moda. Creo campañas, identidades de marca y experiencias, desde el concepto hasta la ejecución, con foco en moda, beauty y lifestyle.">Marketing strategist with a background in fashion communication. I build campaigns, brand identities and experiences from concept to execution, with a focus on fashion, beauty and lifestyle.</p>
+      <div class="btns"><a class="btn dark" href="#work" data-en="See my work" data-es="Ver proyectos">See my work</a><a class="btn" href="experience.html" data-en="View CV" data-es="Ver CV">View CV</a></div>
+    </div>
+  </div>
+</div></header>
+
+<section class="intro"><div class="wrap">
+  <div class="eyebrow" data-en="How I work" data-es="Cómo trabajo">How I work</div>
+  <p data-en="I start with two questions: how does this brand want to be seen, and what does its audience actually care about? The answer shapes everything else. Sometimes it's a campaign. Sometimes it's an event. <em>Always, it's the brand, translated.</em>" data-es="Empiezo con dos preguntas: ¿cómo quiere ser vista esta marca? ¿Y qué le importa de verdad a su público? La respuesta define todo lo demás. A veces es una campaña. A veces, un evento. <em>Siempre es la marca, traducida.</em>">I start with two questions: how does this brand want to be seen, and what does its audience actually care about? The answer shapes everything else. Sometimes it's a campaign. Sometimes it's an event. <em>Always, it's the brand, translated.</em></p>
+</div></section>
+
+<section style="padding-top:2vh"><div class="wrap">
+  <div class="eyebrow" style="margin-bottom:18px" data-en="A few numbers behind the work" data-es="Algunos números detrás del trabajo">A few numbers behind the work</div>
+  <div class="nums">
+    <div class="num"><b>+30K</b><span data-en="organic community built" data-es="comunidad orgánica construida">organic community built</span></div>
+    <div class="num"><b>400K+</b><span data-en="views on a single piece of content I created" data-es="visualizaciones en una sola pieza de contenido que creé">views on a single piece of content I created</span></div>
+    <div class="num"><b>0 → 6K</b><span data-en="a fashion brand built from scratch" data-es="una marca de moda construida desde cero">a fashion brand built from scratch</span></div>
+  </div>
+</div></section>
+
+<section id="xp"><div class="wrap">
+  <div class="head"><h3 data-en="Experience" data-es="Experiencia">Experience</h3><a class="btn" href="experience.html" data-en="View full CV →" data-es="Ver CV completo →">View full CV →</a></div>
+  <div class="xp">
+    <div class="card"><h4>TrepCamp</h4><div class="role">Brand &amp; Creative Strategist</div>
+      <p data-en="Programs for young people in fashion, media, sports business &amp; entrepreneurship · Madrid &amp; New York" data-es="Programas para jóvenes en moda, medios, negocio del deporte y emprendimiento · Madrid y Nueva York">Programs for young people in fashion, media, sports business &amp; entrepreneurship · Madrid &amp; New York</p>
+      <span class="date" data-en="2024 — Present" data-es="2024 — Actualidad">2024 — Present</span></div>
+    <div class="card"><h4>Vibra Alto</h4><div class="role">Founder &amp; Creative Director</div>
+      <p data-en="My own fashion brand, built from scratch and sold entirely through Instagram" data-es="Mi propia marca de moda, creada desde cero y vendida íntegramente a través de Instagram">My own fashion brand, built from scratch and sold entirely through Instagram</p>
+      <span class="date">2020 — 2022</span></div>
+    <div class="card"><h4 data-en="Education" data-es="Formación">Education</h4>
+      <ul class="edu" style="margin-top:10px">
+        <li><b>IED Madrid</b><span data-en="Master in Fashion Communication · 2024–25" data-es="Máster en Comunicación de Moda · 2024–25">Master in Fashion Communication · 2024–25</span></li>
+        <li><b>Inside LVMH</b><span data-en="Certificate · 2026" data-es="Certificado · 2026">Certificate · 2026</span></li>
+        <li><b>Universidad Privada Boliviana</b><span data-en="Bachelor in Marketing &amp; Logistics, Cum Laude" data-es="Grado en Marketing y Logística, Cum Laude">Bachelor in Marketing &amp; Logistics, Cum Laude</span></li>
+      </ul></div>
+  </div>
+</div></section>
+
+<section id="work" style="padding-top:4vh"><div class="wrap">
+  <div class="head"><h3 data-en="My <em class='s'>work</em>" data-es="Mi <em class='s'>trabajo</em>">My <em class="s">work</em></h3><span class="eyebrow" data-en="5 areas · tap to open" data-es="5 áreas · toca para abrir">5 areas · tap to open</span></div>
+  <div class="work">
+    <a class="wc" href="brand-strategy.html"><img src="assets/img/home/01.jpg" alt=""><span class="pill no">01</span><div class="lab"><div class="eyebrow">TrepCamp</div><h5>Brand Strategy &amp; Audience</h5><p data-en="Giving a scattered brand a clear voice, audience and direction." data-es="Dar a una marca dispersa una voz, un público y una dirección claros.">Giving a scattered brand a clear voice, audience and direction.</p></div></a>
+    <a class="wc" href="vibra-alto.html"><img src="assets/img/home/02.jpg" alt=""><span class="pill no">02</span><div class="lab"><div class="eyebrow">Vibra Alto</div><h5>Brand Building &amp; Creative Direction</h5><p data-en="A fashion brand built from scratch, in the middle of a pandemic." data-es="Una marca de moda creada desde cero, en plena pandemia.">A fashion brand built from scratch, in the middle of a pandemic.</p></div></a>
+    <a class="wc" href="events.html"><img src="assets/img/home/03.jpg" alt=""><span class="pill no">03</span><div class="lab"><div class="eyebrow">Forbes 30 Under 30 · New York · Madrid</div><h5>Events &amp; Experiences</h5><p data-en="From venue to closing night." data-es="Del espacio a la noche de cierre.">From venue to closing night.</p></div></a>
+    <a class="wc" href="ugc.html"><img src="assets/img/home/04.jpg" alt=""><span class="pill no">04</span><div class="lab"><div class="eyebrow">Voices</div><h5>UGC &amp; Influencers</h5><p data-en="Turning participants into the brand's most trusted voices." data-es="Convertir a los participantes en las voces más creíbles de la marca.">Turning participants into the brand's most trusted voices.</p></div></a>
+    <a class="wc" href="content-production.html"><img src="assets/img/home/05.jpg" alt=""><span class="pill no">05</span><div class="lab"><div class="eyebrow">Photo · Video · Personal</div><h5>Content Production</h5><p data-en="I don't just brief it. I can shoot it too." data-es="No solo lo planteo. También sé producirlo.">I don't just brief it. I can shoot it too.</p></div></a>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <div class="head"><h3 data-en="The <em class='s'>creative</em> behind the strategy" data-es="La <em class='s'>creativa</em> detrás de la estrategia">The <em class="s">creative</em> behind the strategy</h3></div>
+  <div class="about">
+    <div class="ph"><img src="assets/img/home/06.jpg" alt="Antonella"></div>
+    <div class="card">
+      <div><div class="eyebrow" data-en="About me" data-es="Sobre mí">About me</div>
+      <p style="margin-top:18px" data-en="I'm genuinely into beauty, fashion, makeup and lifestyle: not just as industries I want to work in, but as worlds I live in every day. I've always been the creative one, the one with a new idea. I've travelled to more than 15 countries, and every culture I discover ends up shaping how I see brands and the people they speak to." data-es="Me apasionan de verdad la belleza, la moda, el maquillaje y el lifestyle: no solo como sectores en los que quiero trabajar, sino como mundos que vivo cada día. Siempre he sido la creativa, la que llega con una idea nueva. He viajado a más de 15 países, y cada cultura que descubro acaba influyendo en cómo veo las marcas y a las personas a las que hablan.">I'm genuinely into beauty, fashion, makeup and lifestyle: not just as industries I want to work in, but as worlds I live in every day. I've always been the creative one, the one with a new idea. I've travelled to more than 15 countries, and every culture I discover ends up shaping how I see brands and the people they speak to.</p></div>
+      <div><div class="sig">Antonella</div><a class="btn" href="about.html" style="margin-top:14px" data-en="More about me →" data-es="Más sobre mí →">More about me →</a></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="cta"><div class="wrap">
+  <h3 data-en="Let's build something <em class='s'>people remember.</em>" data-es="Creemos algo que <em class='s'>la gente recuerde.</em>">Let's build something <em class="s">people remember.</em></h3>
+  <p data-en="I'm looking for my next role in Madrid, at an agency or in-house, ideally with beauty, fashion and lifestyle brands." data-es="Busco mi próximo reto en Madrid, en agencia o in-house, idealmente con marcas de beauty, moda y lifestyle.">I'm looking for my next role in Madrid, at an agency or in-house, ideally with beauty, fashion and lifestyle brands.</p>
+  <a class="btn dark" href="mailto:antonellasossi@icloud.com" data-en="Get in touch" data-es="Escríbeme">Get in touch</a>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="foot"><a href="mailto:antonellasossi@icloud.com">antonellasossi@icloud.com</a><a href="https://www.linkedin.com/in/antonella-sossi/" target="_blank" rel="noopener">LinkedIn</a><span>Madrid, Spain</span><span>© 2026 Antonella Sossi</span></div>
+  <div class="giant">Antonella Sossi</div>
+</div></footer>
+<script>
+document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>{
+  const l=b.dataset.l; document.documentElement.lang=l;
+  document.querySelectorAll('.lang button').forEach(x=>x.classList.toggle('on',x===b));
+  document.querySelectorAll('[data-'+l+']').forEach(el=>{el.innerHTML=el.getAttribute('data-'+l)});
+}));
+function fit(){const g=document.querySelector('.giant'),cs=getComputedStyle(g.parentElement),w=g.parentElement.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);g.style.fontSize='100px';const r=g.getBoundingClientRect().width;g.style.fontSize=(100*w/r*0.99)+'px';}
+addEventListener('load',fit);addEventListener('resize',fit);document.fonts&&document.fonts.ready.then(fit);
+</script>
+<script>
+(function(){
+  try{ if('scrollRestoration' in history) history.scrollRestoration='manual'; }catch(e){}
+  function top(){
+    if(location.hash){ var t=document.getElementById(location.hash.slice(1)); if(t){ t.scrollIntoView({behavior:'instant',block:'start'}); return; } }
+    window.scrollTo({top:0,left:0,behavior:'instant'});
+  }
+  top(); window.addEventListener('load',top); window.addEventListener('pageshow',top);
+})();
+(function(){try{
+  var q=new URLSearchParams(location.search).get('lang'), l=q;
+  try{ if(!l) l=localStorage.getItem('lang'); }catch(e){}
+  document.querySelectorAll('.lang button').forEach(function(b){
+    b.addEventListener('click',function(){ try{localStorage.setItem('lang',b.dataset.l);}catch(e){} });
+  });
+  if(l==='es'){ var b=document.querySelector('.lang button[data-l="es"]'); if(b) b.click(); }
+}catch(e){}})();
+</script>
+</body>
+</html>
